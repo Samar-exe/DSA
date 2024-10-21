@@ -1,4 +1,4 @@
-// patterns can be seen as a matrix. where whitespace is 0 and characters are 1s
+// link to problems: https://www.w3resource.com/java-exercises/basic/index.php
 
 import java.util.Scanner;
 
@@ -107,7 +107,33 @@ public class Basic1 {
     System.out.println(quotient);
   }
 
+  static void Fifteenth() {
+    int num = 15;
+    int base = 16;
+    String quotient = "";
+    while (num > 0) {
+      quotient = quotient + Integer.toHexString(num % base);
+      num = num / base;
+    }
+    System.out.println(quotient.toUpperCase());
+  }
+
+  static void Sixteenth() {
+    int num = 15;
+    int base = 8;
+    String quotient = "";
+    while (num > 0) {
+      quotient = Integer.toOctalString(num % base) + quotient;
+      num = num / base;
+    }
+    System.out.println(quotient);
+  }
+
+  static void Seventeen() {
+    System.out.println(System.getProperty("java.version"));
+  }
+
   public static void main(String[] args) {
-    Fourteenth();
+    Seventeen();
   }
 }
