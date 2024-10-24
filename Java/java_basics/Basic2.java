@@ -219,6 +219,18 @@ public class Basic2 {
     System.out.println(result);
   }
 
+  static void calculateAverage() {
+    Scanner sc = new Scanner(System.in);
+    System.out.print("enter the no. of digits you want to calculate: ");
+    int count = sc.nextInt();
+    int sum = 0;
+    for (int i = 0; i < count; i++) {
+      System.out.print("enter number: ");
+      sum = sum + sc.nextInt();
+    }
+    System.out.println(sum / count);
+    sc.close();
+  }
   public static void main(String... args) {
   }
 }
