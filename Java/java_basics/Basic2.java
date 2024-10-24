@@ -83,6 +83,22 @@ public class Basic2 {
     sc.close();
   }
 
+  static void occurences() {
+    Scanner sc = new Scanner(System.in);
+    int num = 1385757879;
+    int find = sc.nextInt();
+    int count = 0;
+    while (num != 0) {
+      int temp = num;
+      temp = num % 10;
+      if (temp == find) {
+        count++;
+      }
+      num = num / 10;
+    }
+    System.out.println(count);
+    sc.close();
+  }
   public static void main(String... args) {
   }
 }
