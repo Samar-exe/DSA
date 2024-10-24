@@ -243,6 +243,34 @@ public class Basic2 {
     System.out.println("Kunal will be able to go out for a total of " + countOfEvenDays + " days");
   }
 
+  static void complexSum() {
+    Scanner sc = new Scanner(System.in);
+    int nums;
+    int sumOfNegatives = 0;
+    int sumOfeven = 0;
+    int sumOfOdd = 0;
+
+    do {
+
+      System.out.print("Enter number: ");
+      nums = sc.nextInt();
+
+      if (nums < 0) {
+        sumOfNegatives = sumOfNegatives + nums;
+      }
+      if (nums % 2 == 0 && nums > 0) {
+        sumOfeven = sumOfeven + nums;
+      }
+      if (nums % 2 != 0 && nums > 0) {
+        sumOfOdd = sumOfOdd + nums;
+      }
+
+    } while (nums != 0);
+    sc.close();
+    System.out.println("Sum of all negative numbers: " + sumOfNegatives);
+    System.out.println("Sum of all positive even numbers: " + sumOfeven);
+    System.out.println("Sum of all positive odd numbers: " + sumOfOdd);
+  }
   public static void main(String... args) {
   }
 }
