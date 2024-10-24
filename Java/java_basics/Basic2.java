@@ -231,6 +231,18 @@ public class Basic2 {
     System.out.println(sum / count);
     sc.close();
   }
+
+  static void countEvenDays() {
+    int totalDays = 31;
+    int countOfEvenDays = 0;
+    for (int i = 1; i <= totalDays; i++) {
+      if (i % 2 == 0) {
+        countOfEvenDays++;
+      }
+    }
+    System.out.println("Kunal will be able to go out for a total of " + countOfEvenDays + " days");
+  }
+
   public static void main(String... args) {
   }
 }
