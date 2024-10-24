@@ -99,6 +99,19 @@ public class Basic2 {
     System.out.println(count);
     sc.close();
   }
+
+  static void reverseNumber() {
+    int num = 23597;
+    int result = 0;
+    while (num != 0) {
+      int temp = num;
+      temp = num % 10;
+      result = result * 10 + temp;
+      num = num / 10;
+    }
+    System.out.println(result);
+  }
+
   public static void main(String... args) {
   }
 }
