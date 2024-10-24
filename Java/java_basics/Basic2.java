@@ -112,6 +112,17 @@ public class Basic2 {
     System.out.println(result);
   }
 
+  static void evenOrOdd() {
+    Scanner sc = new Scanner(System.in);
+    System.out.print("enter num: ");
+    int num = sc.nextInt();
+    if (num % 2 == 0) {
+      System.out.println("Is even");
+    } else {
+      System.out.println("is odd");
+    }
+    sc.close();
+  }
   public static void main(String... args) {
   }
 }
