@@ -191,6 +191,19 @@ public class Basic2 {
     sc.close();
   }
 
+  static void sum() {
+    Scanner sc = new Scanner(System.in);
+    int num;
+    int sum = 0;
+    do {
+      System.out.print("Enter Number: ");
+      num = sc.nextInt();
+      sum = sum + num;
+    } while (num != 0);
+    sc.close();
+    System.out.println(sum);
+  }
+
   public static void main(String... args) {
   }
 }
