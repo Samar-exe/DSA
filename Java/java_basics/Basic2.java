@@ -174,6 +174,23 @@ public class Basic2 {
     }
     sc.close();
   }
+
+  static void largestcont() {
+    Scanner sc = new Scanner(System.in);
+    int num;
+    int max = 0;
+    do {
+      System.out.print("enter number: ");
+      num = sc.nextInt();
+      if (num > max) {
+        max = num;
+      }
+
+    } while (num != 0);
+    System.out.println(max);
+    sc.close();
+  }
+
   public static void main(String... args) {
   }
 }
