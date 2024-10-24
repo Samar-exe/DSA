@@ -66,6 +66,23 @@ public class Basic2 {
     sc.close();
   }
 
+  static void fibo() {
+    int a = 0;
+    int b = 1;
+    Scanner sc = new Scanner(System.in);
+    System.out.print("enter position: ");
+    int pos = sc.nextInt();
+    int count = 2;
+    while (count <= pos) {
+      int temp = b;
+      b = a + b;
+      a = temp;
+      count++;
+    }
+    System.out.print(b);
+    sc.close();
+  }
+
   public static void main(String... args) {
   }
 }
