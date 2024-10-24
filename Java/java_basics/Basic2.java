@@ -204,6 +204,21 @@ public class Basic2 {
     System.out.println(sum);
   }
 
+  // Intermediate java programs.
+
+  static void factorial() {
+    Scanner sc = new Scanner(System.in);
+    System.out.print("enter number: ");
+    int num = sc.nextInt();
+    int result = 1;
+    while (num >= 1) {
+      result = result * num;
+      num = num - 1;
+    }
+    sc.close();
+    System.out.println(result);
+  }
+
   public static void main(String... args) {
   }
 }
