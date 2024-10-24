@@ -123,6 +123,23 @@ public class Basic2 {
     }
     sc.close();
   }
+
+  static void isPalindrome() {
+    Scanner sc = new Scanner(System.in);
+    String input = sc.next();
+    String temp = "";
+    for (int i = input.length() - 1; i >= 0; i--) {
+      temp = temp + input.charAt(i);
+    }
+    if (input.equals(temp)) {
+      System.out.println("is palindrome");
+    } else {
+      System.out.println("is not palindrome");
+    }
+    System.out.println(temp);
+    sc.close();
+  }
+
   public static void main(String... args) {
   }
 }
