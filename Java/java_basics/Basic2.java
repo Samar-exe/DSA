@@ -140,6 +140,29 @@ public class Basic2 {
     sc.close();
   }
 
+  static void isArmstrong() {
+    // Scanner sc = new Scanner(System.in);
+    // sc.close();
+  }
+
+  static void difference() {
+    // link :
+    // https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
+
+    int num = 4421;
+    int product = 1;
+    int sum = 0;
+    while (num != 0) {
+      int temp = num;
+      temp = num % 10;
+      product = temp * product;
+      sum = sum + temp;
+      num = num / 10;
+    }
+    System.out.println(product - sum);
+
+  }
+
   public static void main(String... args) {
   }
 }
