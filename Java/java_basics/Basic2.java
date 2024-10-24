@@ -53,6 +53,19 @@ public class Basic2 {
     sc.close();
   }
 
+  static void alphabet() {
+    Scanner sc = new Scanner(System.in);
+    char ch = sc.next().charAt(0);
+    if (ch >= 'a' && ch <= 'z') {
+      System.out.println("is lowercase");
+    } else if (ch >= 'A' && ch <= 'Z') {
+      System.out.println("is uppercase");
+    } else {
+      System.out.println("error");
+    }
+    sc.close();
+  }
+
   public static void main(String... args) {
   }
 }
